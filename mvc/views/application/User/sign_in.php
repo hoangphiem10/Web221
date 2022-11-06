@@ -22,9 +22,8 @@ if (isset($_POST['submit'])) {
         $_SESSION["name"] = $row['user_name'];
         $_SESSION["phone"] = $row['phone'];
 
-        if (isset($_SESSION["email"])) {        
-            if ($row['role'] == "admin")
-            {
+        if (isset($_SESSION["email"])) {
+            if ($row['role'] == "admin") {
                 echo '<script type = "text/javascript">
                 window.location.href = "http://localhost/web212/category/index"</script>';
             }
@@ -35,7 +34,7 @@ if (isset($_POST['submit'])) {
             // }
             else {
                 echo '<script type = "text/javascript">
-                window.location.href = "http://localhost/web212/"</script>';
+                window.location.href = "http://localhost:8080/web212/"</script>';
             }
         }
     } else {
@@ -46,134 +45,145 @@ if (isset($_POST['submit'])) {
 }
 ?>
 <style>
+    body {
+        height: 100vh;
+        width: 100vw;
+        background: center / cover no-repeat url("../../../web212/public/assets/img/background.png");
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     /* Login Form */
-.modal-backdrop {
-    display:none;
-}
-.signup-form {
-    margin-bottom: 40px;
-}
+    .modal-backdrop {
+        display: none;
+    }
 
-.signup-form, 
-.login-form {
-margin: 40px auto;
-width: 500px;
-box-shadow: 0px 4px 24px rgb(139 167 178 / 16%);
-padding: 36px;
-}
+    .signup-form {
+        margin-bottom: 40px;
+    }
 
-.signup-form label,
-.login-form label {
-color: black;
-float: left;
-}
-.form-logo {
-/* padding: 0 200px; */
-height: 50px;
-width: 270px;
-margin: 84px auto;
-}
+    .signup-form,
+    .login-form {
+        width: 500px;
+        box-shadow: 0px 0 30px 5px rgb(0 0 0 / 30%);
+        padding: 12px 36px;
+        border-radius: 4px;
+        background-color: #fff;
+    }
 
-.form-logo img {
-width: 100%;
-}
+    .signup-form label,
+    .login-form label {
+        color: black;
+        float: left;
+    }
 
-.form-style {
-margin: -96px auto 24px;
-}
+    .form-logo {
+        /* padding: 0 200px; */
+        height: 50px;
+        width: 270px;
+        margin: 84px auto;
+    }
 
+    .form-logo img {
+        width: 100%;
+    }
 
-
-.form-style .login-btn {
-    background-color: #56B280;
-    color: white;
-width: 100%;
-}
-
-
-.form-style input {
-width: 100%;
-height: 45px;
-margin-bottom: 8px;
-}
-
-.form-style button {
-margin-top: 12px;
-}
-
-
-.forgot {
-margin-top: 12px;
-text-align: right;
-}
-
-.forgotPass {
-background:none;
-border: none;
-text-decoration: underline;
-color: #56B280;
-}
+    .form-style {
+        margin: -96px auto 24px;
+    }
 
 
 
-.google-btn {
-    background-color: white;
-    width: 100%;
-    color: black;
-    box-shadow: 0px 0px 2px rgb(0 0 0 / 25%);
-    height: 45px;
-    padding: 4px 32px;
-}
+    .form-style .login-btn {
+        background-color: #56B280;
+        color: white;
+        width: 100%;
+    }
 
-.google-btn img {
-    padding-bottom: 1px;
-    width: 9%;
-}
 
-.google-btn span {
-    line-height: 37px;
-}
+    .form-style input {
+        width: 100%;
+        height: 45px;
+        margin-bottom: 8px;
+    }
 
-.google-btn .img-container {
-    width: 50px;
-    margin: 0;
-}
+    .form-style button {
+        margin-top: 12px;
+    }
 
-.forgotPass {
-    margin-top: 12px;
-}
 
-.forgotPass:hover {
-    color: #56B280;
-}
+    .forgot {
+        margin-top: 12px;
+        text-align: right;
+    }
 
+    .forgotPass {
+        background: none;
+        border: none;
+        text-decoration: underline;
+        color: #56B280;
+    }
+
+
+
+    .google-btn {
+        background-color: white;
+        width: 100%;
+        color: black;
+        box-shadow: 0px 0px 2px rgb(0 0 0 / 25%);
+        height: 45px;
+        padding: 4px 32px;
+    }
+
+    .google-btn img {
+        padding-bottom: 1px;
+        width: 9%;
+    }
+
+    .google-btn span {
+        line-height: 37px;
+    }
+
+    .google-btn .img-container {
+        width: 50px;
+        margin: 0;
+    }
+
+    .forgotPass {
+        margin-top: 12px;
+    }
+
+    .forgotPass:hover {
+        color: #56B280;
+    }
 </style>
 <!-- Page Content -->
 <div class="login-form">
-        <form method="post" name="login" class="form-style">
-            <div class="form-logo">
-                <a href="http://localhost/web212/home/index">
-                    <img src="../../../web212/public/assets/img/header-freshgro.png" alt="logo">
-                </a>
-                
-            </div>
-            <label for="email"><b>Email</b></label> <br>
-            <input type="text" name="email" placeholder="Nhập Email" id="email" class="form-control"> <br>
+    <form method="post" name="login" class="form-style">
+        <div class="form-logo">
+            <a href="http://localhost/web212/home/index">
+                <img src="../../../web212/public/assets/img/Bach-Hoa-Xanh-Logo.png" alt="logo">
+            </a>
 
-            <label for="password"><b>Mật khẩu</b></label> <br>
-            <input type="password" name="password" placeholder="Nhập mật khẩu" id="password" class="form-control"> <br>
+        </div>
+        <label for="email"><b>Email</b></label> <br>
+        <input type="email" name="email" placeholder="Nhập Email" id="email" class="form-control" required> <br>
 
-            <input type="submit" name="submit" value="Đăng nhập" class="btn login-btn btn-bg">
+        <label for="password"><b>Mật khẩu</b></label> <br>
+        <input type="password" name="password" placeholder="Nhập mật khẩu" id="password" class="form-control" required> <br>
 
-            <div class="forgot">
-                <a href="http://localhost/web212/user/sign_up" class="forgotPass" style="float: left;">
-                    Đăng ký
-                </a>
+        <input type="submit" name="submit" value="Đăng nhập" class="btn login-btn btn-bg">
 
-                <button class="forgotPass" onclick="alert('Mật khẩu mới đã được gửi vào email của bạn!');">
-                    Quên mật khẩu
-                </button>
-            </div>
-        </form>
-    </div>  
+        <div class="forgot">
+            <a href="http://localhost/web212/user/sign_up" class="forgotPass" style="float: left;">
+                Đăng ký
+            </a>
+
+            <button class="forgotPass" onclick="alert('Mật khẩu mới đã được gửi vào email của bạn!');">
+                Quên mật khẩu
+            </button>
+        </div>
+    </form>
+</div>
