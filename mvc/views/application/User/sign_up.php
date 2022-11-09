@@ -180,7 +180,7 @@ if (isset($_POST['submit'])) {
 
         <div class="footer-wrapper">
             <span>Đã có tài khoản?</span>
-            <a href="http://localhost:8080/web212/user/sign_in" class="forgotPass">
+            <a href="http://localhost/web212/user/sign_in" class="forgotPass">
                 Đăng nhập
             </a>
         </div>
