@@ -4,39 +4,15 @@
     ?>
     <main class="page-main">
         <div class="section-first-screen">
-            <div class="first-screen__bg hide-in-sd" style="background-color: rgba(86, 178, 128, 15%); height: 300px;">
+            <div class="first-screen__bg hide-in-sd" 
+              style="background-image: url('https://img.freepik.com/free-vector/hand-drawn-farmers-market-banner_52683-83392.jpg?w=2000'); height: 400px;">
             </div>
             <div class="first-screen__content hide-in-sd" style="height: 300px;">
                 <div class="uk-container" style="padding: 32px 0">
                     <div class="first-screen__box page-info">
                         <h2 class="first-screen-page">
-                            Danh mục sản phẩm
-                            <span class="first-screen-page" id="category-page">
-                                <?php if(isset($_SESSION['category_id'])) {
-                      switch ($_SESSION['category_id']) {
-                        case 1:
-                          echo ": Trái cây";
-                          break;
-                        case 2:
-                          echo ": Thịt";
-                          break;
-                        case 3:
-                          echo ": Rau củ quả";
-                          break;
-                        case 4:
-                          echo ": Thủy hải sản";
-                          break;
-                      }
-                    }
-                    ?>
                             </span>
                         </h2>
-                        <div class="first-screen__breadcrumb">
-                            <ul class="uk-breadcrumb">
-                                <li><a href="http://localhost/web212/home/index">Trang chủ</a></li>
-                                <li> <a href="http://localhost/web212/home/catalog">Sản phẩm</a></li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div>
