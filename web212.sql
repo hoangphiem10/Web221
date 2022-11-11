@@ -376,7 +376,46 @@ THEN
 END IF
 $$
 DELIMITER ;
+-- --------------------------------------------------------
 
+--
+-- Table structure for table `news`
+--
+CREATE TABLE `news` (
+  `news_id` int(11) NOT NULL,
+  `img_news` varchar(255) DEFAULT NULL
+  `header_news` varchar(255) DEFAULT NULL
+  `intro_news` varchar(255) DEFAULT NULL
+  `content_news` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `_comment`
+--
+INSERT INTO `news` (`news_id`, `img_news`, `header_news`, `intro_news`,`content_news`) VALUES
+(1,'https://ttol.vietnamnetjsc.vn/images/2020/02/03/14/44/dua-hau-2.jpg',`'Giải cứu' 40 tấn dưa hấu đỏ Kon Tum`,'Vụ mùa năm nay lại tái diễn tình trạng ùn ứ hàng hóa ở cửa khẩu, dẫn đến rớt giá một số loại nông sản đang vào mùa, trong đó có mặt hàng dưa hấu đỏ của nông dân Kon Tum, ảnh hưởng trực tiếp đến đời sống của bà con nông dân chuyên trồng dưa hấu.','Trước thực trạng trên, Liên hiệp Hợp tác xã thương mại TP.HCM (Saigon Co.op) đã nhanh chóng vào cuộc, chọn lọc và thu mua giá cao dưa hấu đỏ của các nhà vườn, hợp tác xã tại tỉnh Kon Tum với số lượng lên đến 40 tấn, góp phần "giải cứu" nông sản giúp bà con nông dân.
+
+Mua nông sản ủng hộ bà con nông dân
+
+Theo Saigon Co.op, 40 tấn dưa hấu đỏ của tỉnh Kon Tum sẽ được Saigon Co.op vận chuyển về bán tại các siêu thị Co.opmart, Co.opXtra, Co.op Food khu vực TP.HCM, Đông Nam Bộ với giá 11.200 đồng/kg.
+
+Để đảm bảo chất lượng nông sản đến tay người tiêu dùng, Saigon Co.op lựa chọn một cách kỹ lưỡng, đảm bảo các yếu tố vi sinh để đưa vào chương trình bán hàng không lợi nhuận của Saigon Co.op. Do đó, người dân ở TP.HCM và khu vực Đông Nam Bộ sẽ được thưởng thức dưa hấu tươi ngon, đảm bảo chất lượng và hỗ trợ tiêu thụ nông sản cho bà con trồng dưa Kon Tum.
+
+Tại siêu thị Co.opmart Rạch Miễu, nổi bật giữa quầy rau củ quả ở tầng trệt là kệ dưa hấu đỏ tươi ngon đang được khuyến mãi với mức giá 11.200 đồng/kg. Vợ chồng anh Phan Thanh Huy (31 tuổi) và chị Bùi Thảo Ly (ngụ đường Cầm Bá Thước, quận Phú Nhuận) rất bất ngờ với giá này, ngay lập tức hai vợ chồng "mở hàng" với một trái dưa hấu nặng gần 3kg giá chỉ 30.000 đồng.
+
+Theo anh Huy, siêu thị Co.opmart có hàng hóa đa dạng, riêng với các mặt hàng tươi sống như trái cây, rau củ, thịt cá... anh chủ yếu mua ở siêu thị này bởi "ngại trả giá" và không yên tâm về chất lượng, nguồn gốc xuất xứ khi mua ở những nơi khác. 
+
+Riêng với trái cây, anh Huy có thể mua rất nhiều loại cây trái sản vật các địa phương theo thời vụ lẫn các loại hoa quả nhập khẩu để luân phiên tráng miệng sau mỗi bữa ăn.
+
+Tại siêu thị Co.opmart Nguyễn Đình Chiểu (quận 3), bà nội trợ Nguyễn Phương Hoài (44 tuổi, ngụ đường Lý Chính Thắng, quận 3) ngoài việc mua dưa hấu đỏ giá mềm "giải cứu" giúp bà con nông dân, bà Hoài cũng chọn mua thêm thanh long ruột đỏ và cam sành để gia đình ăn dần trong tuần.
+
+Tăng khuyến mãi, sẻ chia khó khăn với khách hàng
+
+Theo Saigon Co.op, khi thị trường có những diễn biến bất lợi cho bà con nông dân, Saigon Co.op sẵn sàng hy sinh lợi nhuận và nhanh chóng triển khai áp dụng bán hàng không lợi nhuận đối với các mặt hàng nông sản, từ đó kích cầu tiêu thụ, chung tay giúp bà con vượt qua khó khăn.
+
+Theo bà Hoài, ngoài yếu tố giá cả, bà Hoài thường chọn mua trái cây tại Co.opmart Nguyễn Đình Chiểu bởi rất đa dạng chủng loại, mùa nào cây trái đó và đặc biệt là có nhiều đợt "giải cứu" nông sản, giúp người tiêu dùng gián tiếp ủng hộ bà con nông dân. 
+
+Đặc biệt, mỗi mùa vải thiều miền Bắc vào vụ là bà Hoài đều đến siêu thị mua số lượng lớn để vừa cho gia đình ăn vừa tặng những người thân quen của mình.');
 -- --------------------------------------------------------
 
 --
@@ -498,6 +537,16 @@ ALTER TABLE `_comment`
 -- Constraints for dumped tables
 --
 
+--
+-- Indexes for table `news`
+--
+ALTER TABLE `news`
+  ADD PRIMARY KEY (`news_id`),
+  ADD KEY `customer_id` (`customer_id`);
+
+--
+-- Constraints for dumped tables
+--
 --
 -- Constraints for table `orderr`
 --
