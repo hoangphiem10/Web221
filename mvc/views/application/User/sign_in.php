@@ -34,7 +34,7 @@ if (isset($_POST['submit'])) {
             // }
             else {
                 echo '<script type = "text/javascript">
-                window.location.href = "http://localhost:8080/web212/"</script>';
+                window.location.href = "http://localhost/web212/"</script>';
             }
         }
     } else {
