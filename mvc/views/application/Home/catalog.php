@@ -7,7 +7,7 @@
             <div class="first-screen__bg hide-in-sd" 
               style="background-image: url('https://img.freepik.com/free-vector/hand-drawn-farmers-market-banner_52683-83392.jpg?w=2000'); height: 400px;">
             </div>
-            <div class="first-screen__content hide-in-sd" style="height: 300px;">
+            <div class="first-screen__content hide-in-sd" style="height: 400px;">
                 <div class="uk-container" style="padding: 32px 0">
                     <div class="first-screen__box page-info">
                         <h2 class="first-screen-page">
@@ -21,7 +21,7 @@
                 <div class="uk-container">
                     <div data-uk-filter="target: .js-filter">
                         <div class="catalog-filter-row">
-                            <ul class="uk-subnav">
+                            <ul class="uk-subnav uk-subnav-pill">
                                 <li <?php if(!isset($_SESSION['category_id'])) echo "class='uk-active'" ?>
                                     data-uk-filter-control=""><a
                                         onclick="document.getElementById('category-page').innerHTML = ''" href="#">Tất
@@ -59,7 +59,8 @@
                                                     <div class="product-item__media">
                                                         <div class="uk-inline-clip uk-transition-toggle uk-light"
                                                             data-uk-lightbox="data-uk-lightbox"><img
-                                                                class="product-zoom"
+                                                                class=""
+                                                                href=""
                                                                 style="height: 100%; width:100%; object-fit: cover;"
                                                                 src="../../../web212/public/assets/img<?php echo $row["avatar"] ?>?t=123"
                                                                 alt="<?php echo $row["avatar"] ?>" /></div>
@@ -69,7 +70,7 @@
                                                 </div>
                                                 <div class="product-item__info">
                                                     <div class="product-item__price"><b><span
-                                                                class="value"><?php echo $row["price"] ?>đ</span></b>
+                                                                class="value"><?php echo number_format($row["price"]) ?>đ</span></b>
                                                     </div>
                                                 </div>
                                             </a>

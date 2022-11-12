@@ -1875,7 +1875,7 @@ body.dm-light .pan-loader .shadow {
 .product-item__title:hover,
 .product-item__title:focus,
 .product-item__title:active {
-    color: #bbe0cc;
+    color: #518b6c;
     text-decoration: none;
 }
 
@@ -2019,7 +2019,7 @@ body.dm-light .pan-loader .shadow {
 
 .product-item__price .value {
     font-family: "Montserrat";
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 400;
 }
 

@@ -37,27 +37,20 @@
       ?>
 
         <div class="section-first-screen">
-            <div class="first-screen__bg hide-in-sd" style="background-color: rgba(86, 178, 128, 15%); height: 300px;">
+            <div class="first-screen__bg hide-in-sd" style="background-image: url('https://img.freepik.com/free-vector/hand-drawn-farmers-market-banner_52683-83392.jpg?w=2000'); height: 400px;">
             </div>
             <div class="first-screen__content hide-in-sd" style="height: 300px;">
                 <div class="uk-container" style="padding: 32px 0">
-                    <div class="first-screen__box page-info">
-                        <h2 class="first-screen-page">Sản phẩm</h2>
-                        <div class="first-screen__breadcrumb">
-                            <ul class="uk-breadcrumb">
-                                <li><a href="http://localhost/web212/home/index">Trang chủ</a></li>
-                                <li> <a href="http://localhost/web212/home/catalog">Sản phẩm</a></li>
-                                <li> <span><?php echo $row["product_name"] ?></span></li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
-
+        
         <div class="page-content">
             <div class="uk-margin-large-top uk-container">
                 <div class="product-full-card">
+                    <div class="first-screen__box page-info">
+                        <h2 class="first-screen-page">Sản phẩm</h2>
+                    </div>
                     <div class="uk-grid uk-grid-large uk-child-width-1-2@m uk-flex-middle" data-uk-grid>
                         <div>
                             <div class="product-full-card__gallery">
@@ -84,7 +77,7 @@
                             <div class="product-full-card__info">
                                 <div class="product-full-card__price">
                                     <span class="value" id="price-value" style="font-size:30px">
-                                        <?php echo $row["price"] ?>đ
+                                        <?php echo number_format($row["price"]) ?>đ
                                     </span>
                                 </div>
 

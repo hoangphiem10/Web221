@@ -101,11 +101,11 @@
             </div>
             <hr class="uk-margin">
             <div class="uk-margin-top">
-                <ul class="uk-nav">
-                    <li><a href="http://localhost/web212/home/index">Trang chủ</a></li>
-                    <li><a href="http://localhost/web212/home/catalog">Sản phẩm</a></li>
-                    <li><a href="http://localhost/web212/News/index">Tin tức</a></li>
-                    <li><a href="http://localhost/web212/home/contact">Liên hệ</a></li>
+                <ul class="uk-navbar-nav">
+                    <li class="nav-item"><a href="http://localhost/web212/home/index">Trang chủ</a></li>
+                    <li class="nav-item"><a href="http://localhost/web212/home/catalog">Sản phẩm</a></li>
+                    <li class="nav-item"><a href="http://localhost/web212/News/index">Tin tức</a></li>
+                    <li class="nav-item"><a href="http://localhost/web212/home/contact">Liên hệ</a></li>
                 </ul>
             </div>
             <hr class="uk-margin">
