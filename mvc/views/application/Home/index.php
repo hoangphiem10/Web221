@@ -1,6 +1,7 @@
 <div class="page-wrapper">
     <?php 
       require_once "./mvc/views/".$data["header"].".php";
+    
     ?>
     <main class="page-main">
         <div class="section-first-screen">
@@ -137,7 +138,7 @@
                                         </div>
                                         <div class="product-item__info">
                                             <div class="product-item__price"><b><span
-                                                        class="value"><?php echo $row["price"] ?>đ</span></b></div>
+                                                        class="value"><?php echo number_format($row["price"]) ?>đ</span></b></div>
                                         </div>
                                     </a>
 
