@@ -1,4 +1,3 @@
-
 <div class="page-wrapper">
     <?php require_once './mvc/views/' . $data['header'] . '.php'; ?>
     <main class="page-main">
@@ -45,14 +44,19 @@
               <div class="feature-item__title">Sản phẩm sạch, an toàn</div>
               <div class="feature-item__desc">Sản phẩm của chúng tôi đạt được các chứng nhận của ISO, VietGAP br về độ an toàn.</div>
             </div>
-
+          </div>
+          <div>
+            <div class="feature-item">
+              <i class="bi bi-truck"></i>
+              <div class="feature-item__title">Đặt hàng tiện lợi</div>
+              <div class="feature-item__desc">Đặt hàng trực tiếp trên website hoặc gọi tới hotline.</div>
             </div>
           </div>
           <div>
             <div class="feature-item">
               <i class="bi bi-award"></i>
               <div class="feature-item__title">Chuỗi cửa hàng</div>
-              <div class="feature-item__desc">Bách Hóa Xanh có khoảngbr 300 cửa hàng trải rộng khắp brthành phố Hồ Chí Minh.</div>
+              <div class="feature-item__desc">Bách Hóa Xanh có khoảng 300 cửa hàng trải rộng khắp Thành phố Hồ Chí Minh.</div>
             </div>
           </div>
         </div>
