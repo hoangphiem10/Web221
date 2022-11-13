@@ -15,7 +15,7 @@
         justify-content: center;
         align-items: center;
         width: 500px;
-        border-radious:20px;
+        border-radius:20px;
     }
     
     .user-id{
