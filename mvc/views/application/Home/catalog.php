@@ -4,12 +4,12 @@
     ?>
     <main class="page-main">
         <div class="section-first-screen">
-            <div class="first-screen__bg hide-in-sd" style="background-color: #008C76FF; height: 300px;">
+            <div class="first-screen__bg hide-in-sd" style="background-color: #83D475; height: 300px;">
             </div>
             <div class="first-screen__content hide-in-sd" style="height: 300px;">
                 <div class="uk-container" style="padding: 32px 0">
                     <div class="first-screen__box page-info">
-                        <span style="color: #DBB04AFF; font-size: 50px">Danh mục sản phẩm</span>
+                        <p style="color: #F5DA72; font-size: 50px; text-align: center">Danh mục sản phẩm</p>
                     </div>
                 </div>
             </div>

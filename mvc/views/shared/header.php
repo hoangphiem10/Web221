@@ -9,7 +9,7 @@
                 </div>
 
                 <div class="uk-navbar-center">
-                    <ul class="uk-navbar-nav uk-subnav-pill">
+                    <ul class="uk-navbar-nav">
                         <li <?php if ($_SERVER['REQUEST_URI'] == "/web212/home/index") { ?> class="active" <?php   }  ?>>
                             <a href="/web212/home/index"><span class="nav-btn">Trang chủ</span></a>
                         </li>
