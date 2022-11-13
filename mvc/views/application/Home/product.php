@@ -23,7 +23,6 @@ if (isset($_POST['submit'])) {
     }
 }
 ?>
-
 <div class="page-wrapper">
     <?php
     require_once "./mvc/views/" . $data["header"] . ".php";
@@ -36,30 +35,13 @@ if (isset($_POST['submit'])) {
         ?>
 
             <div class="section-first-screen">
-                <?php
-                $background = "";
-                switch ($row['category_id']) {
-                    case 1:
-                        $background = "https://img.freepik.com/premium-psd/healthy-food-banner-fruits-berries-isolated-white-background_88281-5691.jpg?w=2000";
-                        break;
-                    case 2:
-                        $background = "https://www.taazameatonline.com/uploads/media/2022/taazameat-banner4.jpg";
-                        break;
-                    case 3:
-                        $background = "https://t3.ftcdn.net/jpg/01/63/13/30/360_F_163133061_TlMOMqgxAvBuwzLAjxOQ8v1FQ3OexfRG.jpg";
-                        break;
-                    case 4:
-                        $background = "https://static.vecteezy.com/system/resources/previews/006/121/295/original/frame-with-hand-drawn-seafood-illustration-fresh-lobster-crab-oyster-mussel-squid-and-shrimp-decorative-poster-or-banner-design-with-sea-food-sketch-vintage-menu-template-vector.jpg";
-                        break;
-                }
-                ?>
-                <div id="banner" class="first-screen__bg hide-in-sd">
+                <div class="first-screen__bg hide-in-sd" style="background-color: #008C76FF; height: 300px;">
                 </div>
                 <div class="first-screen__content hide-in-sd" style="height: 300px;">
                     <div class="uk-container" style="padding: 32px 0">
-                        <!-- <div class="first-screen__box page-info">
+                        <div class="first-screen__box page-info">
                             <span style="color: #DBB04AFF; font-size: 50px">Sản phẩm</span>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -433,10 +415,3 @@ if (isset($_POST['submit'])) {
 
     ChangeUI();
 </script>
-
-<style>
-#banner {
-    background-image: url('<?php echo $background; ?>');
-}
-
-</style>
