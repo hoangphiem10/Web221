@@ -4,14 +4,12 @@
     ?>
     <main class="page-main">
         <div class="section-first-screen">
-            <div class="first-screen__bg hide-in-sd" style="background-image: url('https://img.freepik.com/free-vector/hand-drawn-farmers-market-banner_52683-83392.jpg?w=2000'); height: 400px;">
+            <div class="first-screen__bg hide-in-sd" style="background-color: #008C76FF; height: 300px;">
             </div>
-            <div class="first-screen__content hide-in-sd" style="height: 400px;">
+            <div class="first-screen__content hide-in-sd" style="height: 300px;">
                 <div class="uk-container" style="padding: 32px 0">
                     <div class="first-screen__box page-info">
-                        <h2 class="first-screen-page">
-                            </span>
-                        </h2>
+                        <span style="color: #DBB04AFF; font-size: 50px">Danh mục sản phẩm</span>
                     </div>
                 </div>
             </div>
