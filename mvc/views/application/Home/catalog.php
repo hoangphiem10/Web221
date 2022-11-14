@@ -4,12 +4,12 @@
     ?>
     <main class="page-main">
         <div class="section-first-screen">
-            <div class="first-screen__bg hide-in-sd" style="background-color: #83D475; height: 300px;">
+            <div class="first-screen__bg hide-in-sd" style="background-color: rgba(86, 178, 128, 15%); height: 300px;">
             </div>
             <div class="first-screen__content hide-in-sd" style="height: 300px;">
                 <div class="uk-container" style="padding: 32px 0">
                     <div class="first-screen__box page-info">
-                        <p style="color: #F5DA72; font-size: 50px; text-align: center">Danh mục sản phẩm</p>
+                        <p style="color: #008848; font-size: 50px; text-align: center">Danh mục sản phẩm</p>
                     </div>
                 </div>
             </div>
@@ -40,13 +40,16 @@
                                                         <div class="product-item__media">
                                                             <div class="uk-inline-clip uk-transition-toggle uk-light" data-uk-lightbox="data-uk-lightbox"><img class="" href="" style="height: 100%; width:100%; object-fit: cover;" src="../../../web212/public/assets/img<?php echo $row["avatar"] ?>?t=123" alt="<?php echo $row["avatar"] ?>" /></div>
                                                         </div>
-                                                        <div class="product-item__title"><?php echo $row["product_name"] ?>
+                                                        <div class="product-item__title" style="text-align: center"><?php echo $row["product_name"] ?>
                                                         </div>
                                                     </div>
                                                     <div class="product-item__info">
-                                                        <div class="product-item__price"><b><span class="value"><?php echo number_format($row["price"]) ?>đ</span></b>
-                                                        </div>
+                                                        <div class="product-item__price" style="text-align: center">
+                                                            <b><span class="value"><?php echo number_format($row["price"]) ?>đ
+                                                        </span></b>
                                                     </div>
+                                                    <button class="uk-button" style="width:100%">Xem mặt hàng</button>    
+                                                </div>
                                                 </a>
 
                                             </div>

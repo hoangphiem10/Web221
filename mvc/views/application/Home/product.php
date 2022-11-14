@@ -36,30 +36,20 @@ if (isset($_POST['submit'])) {
         ?>
 
             <div class="section-first-screen">
-                <?php
-                $background = "";
-                switch ($row['category_id']) {
-                    case 1:
-                        $background = "https://img.freepik.com/premium-psd/healthy-food-banner-fruits-berries-isolated-white-background_88281-5691.jpg?w=2000";
-                        break;
-                    case 2:
-                        $background = "https://www.taazameatonline.com/uploads/media/2022/taazameat-banner4.jpg";
-                        break;
-                    case 3:
-                        $background = "https://t3.ftcdn.net/jpg/01/63/13/30/360_F_163133061_TlMOMqgxAvBuwzLAjxOQ8v1FQ3OexfRG.jpg";
-                        break;
-                    case 4:
-                        $background = "https://static.vecteezy.com/system/resources/previews/006/121/295/original/frame-with-hand-drawn-seafood-illustration-fresh-lobster-crab-oyster-mussel-squid-and-shrimp-decorative-poster-or-banner-design-with-sea-food-sketch-vintage-menu-template-vector.jpg";
-                        break;
-                }
-                ?>
-                <div id="banner" class="first-screen__bg hide-in-sd">
+                <div class="first-screen__bg hide-in-sd" style="background-color: rgba(86, 178, 128, 15%); height: 300px;">
                 </div>
                 <div class="first-screen__content hide-in-sd" style="height: 300px;">
                     <div class="uk-container" style="padding: 32px 0">
-                        <!-- <div class="first-screen__box page-info">
-                            <span style="color: #DBB04AFF; font-size: 50px">Sản phẩm</span>
+                        <div class="first-screen__box page-info">
+                            <p style="color: #008848; font-size: 50px; text-align: center">Sản phẩm</p>
+                            <!-- <div class="first-screen__breadcrumb">
+                            <ul class="uk-breadcrumb">
+                                <li><a href="http://localhost/web212/home/index">Trang chủ</a></li>
+                                <li> <a href="http://localhost/web212/home/catalog">Sản phẩm</a></li>
+                                <li> <span><?php echo $row["product_name"] ?></span></li>
+                            </ul>
                         </div> -->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -80,21 +70,24 @@ if (isset($_POST['submit'])) {
                                 </div>
                             </div>
                             <div>
-                                <div class="product-full-card__content">
+                                <div class="product-full-card__content" style="background-color: rgb(245, 245, 250);">
                                     <div class="product-full-card__not-active">
-                                        <div class="product-full-card__title"><?php echo $row["product_name"] ?></div>
+                                        <div class="product-full-card__title">
+                                            <?php echo $row["product_name"] ?>
+                                            
+                                            <div class="uk-text-meta">Đã bán <?php echo $row["quantity"]?></div>
+                                        </div>
+                                        <div class="product-full-card__price">
+                                            <span class="value" id="price-value" style="font-size:30px">
+                                                <?php echo number_format($row["price"]) ?>đ
+                                            </span>
+                                        </div>
                                         <!-- <div class="product-full-card__desc"><?php echo $row["intro"] ?></div> -->
                                         <!-- <div class="product-full-card__select">
                     </div> -->
                                     </div>
                                 </div>
                                 <div class="product-full-card__info">
-                                    <div class="product-full-card__price">
-                                        <span class="value" id="price-value" style="font-size:30px">
-                                            <?php echo number_format($row["price"]) ?>đ
-                                        </span>
-                                    </div>
-
                                     <span style="font-size:18px"><b>Danh mục sản phẩm:</b>
                                         <?php
                                         switch ($row['category_id']) {
@@ -135,6 +128,7 @@ if (isset($_POST['submit'])) {
                                     <br>
                                     <div class="product-full-card__btns">
                                         <a class="uk-button" href="#!" onclick="AddToCart()" style="height: 57px;">
+                                        <!-- <script>console.log(document.getElementById("counter-value").value);</script> -->
                                             Thêm vào giỏ hàng
                                             <span data-uk-icon="cart"></span>
                                         </a>
@@ -435,8 +429,7 @@ if (isset($_POST['submit'])) {
 </script>
 
 <style>
-#banner {
-    background-image: url('<?php echo $background; ?>');
-}
-
+    #banner {
+        background-image: url('<?php echo $background; ?>');
+    }
 </style>
