@@ -11,11 +11,11 @@
 
                 <div class="uk-navbar-center">
                     <ul class="uk-navbar-nav">
-                        <li><a href="http://localhost/web212/home/index"><span class="nav-btn">Trang chủ</span></a></li>
-                        <li><a href="http://localhost/web212/home/catalog"><span class="nav-btn">Sản Phẩm</span></a>
+                        <li><a href="http://localhost/web212/home/index"><span class="nav-btn home">Trang chủ</span></a></li>
+                        <li><a href="http://localhost/web212/home/catalog"><span class="nav-btn catalog">Sản Phẩm</span></a>
                         </li>
-                        <li><a href="http://localhost/web212/news/index"><span class="nav-btn">Tin tức</span></a></li>
-                        <li><a href="http://localhost/web212/home/contact"><span class="nav-btn">Liên hệ</span></a></li>
+                        <li><a href="http://localhost/web212/news/index"><span class="nav-btn news">Tin tức</span></a></li>
+                        <li><a href="http://localhost/web212/home/contact"><span class="nav-btn contact">Liên hệ</span></a></li>
                     </ul>
                 </div>
 
@@ -27,7 +27,7 @@
                                   if (isset($_SESSION['name'])){
                                     echo "Xin chào, " . "<span>" .  $_SESSION['name'] . "</span>";
                                   }
-                                  else echo "<a style='color: white; font-weight: bold' href='http://localhost/web212/User/sign_in' class='nav-btn'>Đăng nhập</a>";
+                                  else echo "<a style='color: white; font-size: 16px; text-decoration: none; ' href='http://localhost/web212/User/sign_in' class='nav-btn'>Đăng nhập</a>";
                                   
                                   echo "<span style='margin: 0 12px'> | </span>";
                                 ?>
@@ -151,6 +151,18 @@
     </div>
 
 </header>
+
+<script type = "text/javascript">
+    $('document').ready(() => {
+        const paths = window.location.pathname.split('/')
+        
+        if (paths[paths.length - 1] !== 'index') {
+            $(`.nav-btn.${paths[paths.length - 1]}`).addClass('active')
+        } else {
+            $(`.nav-btn.${paths[paths.length - 2]}`).addClass('active')
+        }
+    })
+</script>
 
 <?php 
     if(isset($_POST['searchinput']))
