@@ -29,7 +29,7 @@
      
          <!-- ==============================CAC DIEM DAC BIET======================================== -->   
 
-    <div class="section-features" >
+    <div class="section-features" style="background-color: #83D475">
       <div class="uk-section uk-container">
         <div class="sectionheader">
           <h2 class="sectiontitle">BÁCH HÓA XANH CÓ GÌ</h2>
@@ -111,7 +111,7 @@
     </div>
     <!----==================TIN TUC==============-->
 
-   <div class="section-features">
+   <div class="section-features" style="background-color: #83D475">
          <div class="uk-container">
            <div class="uk-grid uk-child-width-1-2@m uk-flex-middle data-uk-grid" style="margin-top: 50px;">
              <div>
