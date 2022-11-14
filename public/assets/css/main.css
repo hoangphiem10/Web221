@@ -1078,10 +1078,31 @@ body.dm-light .pan-loader .shadow {
 }
 
 .nav-btn {
+    position: relative;
     font-size: 20px; 
     font-family: 'Montserrat'; 
     color: white; 
 }
+
+.nav-btn.active {
+    color: #fff22f;
+}
+
+/* .nav-btn::after {
+    content: '';
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff;
+}
+
+.nav-btn.active::after {
+    display: block !important;
+} */
+
 @media screen and (max-width:980px) {
     .nav-btn {
         font-size: 18px; 
@@ -1101,7 +1122,7 @@ body.dm-light .pan-loader .shadow {
 }
 
 .nav-btn:hover {
-    color:  #bbc1e1;
+    color:  #faee3d;
 }
 .nav-btn:active {
     text-decoration: underline;
