@@ -16,7 +16,7 @@ if (isset($_SESSION["email"]) && $_SESSION["role"] == "customer") {
         </ol>
       </nav>
 
-      <h1 class="page-header-title">Orders<span class="badge badge-soft-dark ml-2"><?php echo mysqli_num_rows($data["orders"])?></span></h1>
+      <h1 class="page-header-title" >Orders<span class="badge badge-soft-dark ml-2"><?php echo mysqli_num_rows($data["orders"])?></span></h1>
     </div>
   </div>
 </div>

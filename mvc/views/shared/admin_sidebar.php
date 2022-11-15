@@ -1,61 +1,44 @@
-<aside class="js-navbar-vertical-aside navbar navbar-vertical-aside navbar-vertical navbar-vertical-fixed navbar-expand-xl navbar-bordered navbar-dark navbar-vertical-aside-initialized">
-  <div class="navbar-vertical-container">
-    <div class="navbar-vertical-footer-offset pb-0">
-      <div class="navbar-brand-wrapper justify-content-between">
-        <!-- Logo -->
 
-
-        <!-- End Logo -->
-
-        <!-- Navbar Vertical Toggle -->
-        <button type="button" class="js-navbar-vertical-aside-toggle-invoker navbar-vertical-aside-toggle btn btn-icon btn-xs btn-ghost-dark">
-          <i class="tio-clear tio-lg"></i>
-        </button>
-        <!-- End Navbar Vertical Toggle -->
-      </div>
-
-      <!-- Content -->
-      <div class="navbar-vertical-content">
-        <ul class="navbar-nav navbar-nav-lg nav-tabs">
-
-          <li class="nav-item">
-            <small class="nav-subtitle" title="Pages">Admin</small>
-            <small class="tio-more-horizontal nav-subtitle-replacer"></small>
+<div style="background-color: rgba(86, 178, 128, 15%); color:black; padding:50px">
+ <li style="list-style-type:none ;padding-bottom:20px;" >
+            <div class="navbar-brand" title="Pages" style="color:black; font-size:20px; text-align:center; padding-top:40px">ADMIN</div>
+          
           </li>
-
-          <li class="nav-item ">
-            <a class="js-nav-tooltip-link nav-link " href="http://localhost/web212/Category/index" title="" data-placement="left" data-original-title="Layouts">
+          <div style="color:black; font-size:17px;">
+          <li style="list-style-type:none;padding-bottom:20px;">
+            <a  href="http://localhost/web212/Category/index" title="" data-placement="left" data-original-title="Layouts" style="text-decoration:none;color:#222222">
               <!-- Clipboard icon -->
-              <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Categories</span>
+              <span>Categories</span>
             </a>
           </li>
-          <li class="nav-item ">
-            <a class="js-nav-tooltip-link nav-link " href="http://localhost/web212/Product/index" title="" data-placement="left" data-original-title="Layouts">
+          <li style="list-style-type:none;padding-bottom:20px;">
+            <a  href="http://localhost/web212/Product/index" title="" data-placement="left" data-original-title="Layouts"style="text-decoration:none;color:#222222" >
               <!-- Icon product -->
               <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Products</span>
             </a>
           </li>
-          <li class="nav-item ">
-            <a class="js-nav-tooltip-link nav-link " href="http://localhost/web212/Customer/index" title="" data-placement="left" data-original-title="Layouts">
+          <li style="list-style-type:none;padding-bottom:20px;">
+            <a href="http://localhost/web212/Customer/index" title="" data-placement="left" data-original-title="Layouts" style="text-decoration:none;color:#222222">
               <!-- Icon user friend -->
               <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Customers</span>
             </a>
-          </li>
-          <li class="nav-item ">
-            <a class="js-nav-tooltip-link nav-link " href="http://localhost/web212/Order/index" title="" data-placement="left" data-original-title="Layouts">
+          </li >
+          <li style="list-style-type:none;padding-bottom:20px;">
+            <a href="http://localhost/web212/Order/index" title="" data-placement="left" data-original-title="Layouts" style="text-decoration:none;color:#222222">
               <!-- Icon file alt -->
               <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Orders</span>
             </a>
           </li>
-          <li class="nav-item ">
-            <a class="js-nav-tooltip-link nav-link " href="http://localhost/web212/Comment/index" title="" data-placement="left" data-original-title="Layouts">
+          <li style="list-style-type:none">
+            <a  href="http://localhost/web212/Comment/index" title="" data-placement="left" data-original-title="Layouts" style="text-decoration:none;color:#222222">
               <!-- Clipboard icon -->
               <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Comment</span>
             </a>
           </li>
-        </ul>
+          </div>
+       
       </div>
+      
       <!-- End Content -->
-    </div>
-  </div>
-</aside>
+    
+  
