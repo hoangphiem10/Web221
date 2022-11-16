@@ -41,7 +41,24 @@ if (isset($_POST['submit'])) {
                 <div class="first-screen__content hide-in-sd" style="height: 300px;">
                     <div class="uk-container" style="padding: 32px 0">
                         <div class="first-screen__box page-info">
-                            <p style="color: #008848; font-size: 50px; text-align: center">Sản phẩm</p>
+                            <p style="color: #008848; font-size: 50px; text-align: center">
+                                <?php
+                                switch ($row['category_id']) {
+                                    case 1:
+                                        echo "Trái cây";
+                                        break;
+                                    case 2:
+                                        echo "Thịt";
+                                        break;
+                                    case 3:
+                                        echo "Rau củ quả";
+                                        break;
+                                    case 4:
+                                        echo "Thủy hải sản";
+                                        break;
+                                }
+                                ?>
+                            </p>
                             <!-- <div class="first-screen__breadcrumb">
                             <ul class="uk-breadcrumb">
                                 <li><a href="http://localhost/web212/home/index">Trang chủ</a></li>
@@ -74,8 +91,9 @@ if (isset($_POST['submit'])) {
                                     <div class="product-full-card__not-active">
                                         <div class="product-full-card__title">
                                             <?php echo $row["product_name"] ?>
-                                            
-                                            <div class="uk-text-meta">Đã bán <?php echo $row["quantity"]?></div>
+                                            <li class="uk-text-meta">Đã bán <?php echo $row["quantity"] ?></li>
+                                            <!-- <ul class="uk-subnav uk-subnav-divider"> -->
+                                            <!-- </ul> -->
                                         </div>
                                         <div class="product-full-card__price">
                                             <span class="value" id="price-value" style="font-size:30px">
@@ -83,8 +101,6 @@ if (isset($_POST['submit'])) {
                                             </span>
                                         </div>
                                         <!-- <div class="product-full-card__desc"><?php echo $row["intro"] ?></div> -->
-                                        <!-- <div class="product-full-card__select">
-                    </div> -->
                                     </div>
                                 </div>
                                 <div class="product-full-card__info">
@@ -128,40 +144,12 @@ if (isset($_POST['submit'])) {
                                     <br>
                                     <div class="product-full-card__btns">
                                         <a class="uk-button" href="#!" onclick="AddToCart()" style="height: 57px;">
-                                        <!-- <script>console.log(document.getElementById("counter-value").value);</script> -->
+                                            <!-- <script>console.log(document.getElementById("counter-value").value);</script> -->
                                             Thêm vào giỏ hàng
                                             <span data-uk-icon="cart"></span>
                                         </a>
                                     </div>
                                 </div>
-                                <!-- <div class="product-full-card__category">
-                  <span ><b>Danh mục sản phẩm:</b> 
-                    <?php
-                    switch ($row['category_id']) {
-                        case 1:
-                            echo "Trái cây";
-                            break;
-                        case 2:
-                            echo "Thịt";
-                            break;
-                        case 3:
-                            echo "Rau củ quả";
-                            break;
-                        case 4:
-                            echo "Thủy hải sản";
-                            break;
-                    }
-                    ?>
-                  </span>
-			            <p id = "product-tag" style="display:none">
-                    <?php
-                    echo $row['product_id']
-                    ?>
-                  </p>
-                  <br >
-                  <span><b>Tình trạng:</b> Còn hàng</span>
-                  
-                </div> -->
                                 <div class="product-full-card__share"><span style="font-size: 18px"><b>Chia sẻ:</b></span>
                                     <ul>
                                         <li><a href="#!"><i class="fab fa-twitter"></i></a></li>
@@ -172,7 +160,15 @@ if (isset($_POST['submit'])) {
                                 </div>
                             </div>
                         </div>
-                        <div class="product-full-card__tabs">
+                        <br>
+                        <div style="background-color: rgb(245, 245, 250)">
+                            <i class="bi bi-clock"></i> Giao hàng nhanh đến 30 phút trong khu vực nội thành</li>
+                            <br>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-repeat" viewBox="0 0 16 16">
+                                <path d="M11 5.466V4H5a4 4 0 0 0-3.584 5.777.5.5 0 1 1-.896.446A5 5 0 0 1 5 3h6V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192Zm3.81.086a.5.5 0 0 1 .67.225A5 5 0 0 1 11 13H5v1.466a.25.25 0 0 1-.41.192l-2.36-1.966a.25.25 0 0 1 0-.384l2.36-1.966a.25.25 0 0 1 .41.192V12h6a4 4 0 0 0 3.585-5.777.5.5 0 0 1 .225-.67Z" />
+                            </svg> Đổi trả ngay nếu sản phẩm không đảm bảo</li>
+                        </div>
+                        <div class="">
                             <div class="detail-description bg-green-op">
                                 <h2>Mô tả sản phẩm</h2>
                                 <?php echo $row["intro"] ?>
