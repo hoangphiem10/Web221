@@ -1,7 +1,7 @@
 <?php
 if (isset($_SESSION["email"]) && $_SESSION["role"] == "customer") {
   echo '<script type = "text/javascript">
-  window.location.href = "http://localhost:8080/web221/"</script>';
+  window.location.href = "http://localhost/web221/"</script>';
 }
 ?>
 
@@ -10,7 +10,7 @@ if (isset($_SESSION["email"]) && $_SESSION["role"] == "customer") {
     <div class="col-sm mb-2 mb-sm-0">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb breadcrumb-no-gutter">
-          <li class="breadcrumb-item"><a class="breadcrumb-link" href="http://localhost:8080/web221/Comment/index"></a></li>
+          <li class="breadcrumb-item"><a class="breadcrumb-link" href="http://localhost/web221/Comment/index"></a></li>
           <!-- icon home -->
           <li class="breadcrumb-item active" aria-current="page">Comments</li>
         </ol>
@@ -46,7 +46,7 @@ if (isset($_SESSION["email"]) && $_SESSION["role"] == "customer") {
           <td><?php echo $row["cmt_time"] ?></td>
           <td><?php echo $row["cmt"] ?></td>
           <!-- <td><a href="#">Edit</td> -->
-          <td><a href="http://localhost:8080/web221/Comment/delete/<?php echo $row["product_id"]?>/<?php echo $row["customer_id"]?>">Delete</td>
+          <td><a href="http://localhost/web221/Comment/delete/<?php echo $row["product_id"]?>/<?php echo $row["customer_id"]?>">Delete</td>
         </tr>
       <?php 
         }

@@ -44,7 +44,7 @@
                                     <div class="product-item" style="border: 2px solid #cce8d9;">
                                         <div class="product-item__box">
                                             <div class="product-item__intro">
-                                                <a href="http://localhost:8080/web221/home/product/<?php echo $row["product_id"] ?>" style="text-decoration: none;">
+                                                <a href="http://localhost/web221/home/product/<?php echo $row["product_id"] ?>" style="text-decoration: none;">
                                                     <div class="product-item__not-active">
                                                         <div class="product-item__media">
                                                             <div class="uk-inline-clip uk-transition-toggle uk-light" data-uk-lightbox="data-uk-lightbox"><img class="" href="" style="height: 100%; width:100%; object-fit: cover;" src="../../../web221/public/assets/img<?php echo $row["avatar"] ?>?t=123" alt="<?php echo $row["avatar"] ?>" /></div>

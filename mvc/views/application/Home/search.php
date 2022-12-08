@@ -12,7 +12,7 @@
                 <h2 style="font-size: 50px" class="first-screen-page">Kết quả tìm kiếm cho: "<?php echo $data["name"]?>"</h2>
                 <div class="first-screen__breadcrumb">
                     <ul class="uk-breadcrumb">
-                        <li><a href="http://localhost:8080/web221/home/index">Trang chủ</a></li>
+                        <li><a href="http://localhost/web221/home/index">Trang chủ</a></li>
                         <li> <a href="#">Kết quả tìm kiếm</a></li>
                     </ul>
                 </div>
@@ -40,7 +40,7 @@
                 <div class="product-item" style="border: 2px solid #cce8d9;">
                   <div class="product-item__box">
                     <div class="product-item__intro">
-                      <a href="http://localhost:8080/web221/home/product/<?php echo $row["product_id"] ?>" style="text-decoration: none;">
+                      <a href="http://localhost/web221/home/product/<?php echo $row["product_id"] ?>" style="text-decoration: none;">
                         <div class="product-item__not-active">
                           <div class="product-item__media">
                             <div class="uk-inline-clip uk-transition-toggle uk-light" data-uk-lightbox="data-uk-lightbox"><img class="product-zoom" style="height: 100%; width:100%; object-fit: cover;" src="../../../web221/public/assets/img<?php echo $row["avatar"] ?>?t=123" alt="<?php echo $row["avatar"] ?>" /></div>

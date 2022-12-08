@@ -4,7 +4,7 @@
 </div>
 
 <div class="uk-navbar-center"style="text-align:right;margin-right:50px;width:50%;padding-top:30px" >
-    <a href="http://localhost:8080/web221/User/log_out" style="text-decoration:none;color:white;border:1px solid white;padding:10px;border-radius:5px;" hover="color: #ffc107;">Đăng xuất</a>
+    <a href="http://localhost/web221/User/log_out" style="text-decoration:none;color:white;border:1px solid white;padding:10px;border-radius:5px;" hover="color: #ffc107;">Đăng xuất</a>
 </div>
 
 </header>

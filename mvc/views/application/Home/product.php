@@ -61,8 +61,8 @@ if (isset($_POST['submit'])) {
                             </p>
                             <!-- <div class="first-screen__breadcrumb">
                             <ul class="uk-breadcrumb">
-                                <li><a href="http://localhost:8080/web221/home/index">Trang chủ</a></li>
-                                <li> <a href="http://localhost:8080/web221/home/catalog">Sản phẩm</a></li>
+                                <li><a href="http://localhost/web221/home/index">Trang chủ</a></li>
+                                <li> <a href="http://localhost/web221/home/catalog">Sản phẩm</a></li>
                                 <li> <span><?php echo $row["product_name"] ?></span></li>
                             </ul>
                         </div> -->

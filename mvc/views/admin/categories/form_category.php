@@ -1,7 +1,7 @@
 <?php
 if (isset($_SESSION["email"]) && $_SESSION["role"] == "customer") {
   echo '<script type = "text/javascript">
-  window.location.href = "http://localhost:8080/web221/"</script>';
+  window.location.href = "http://localhost/web221/"</script>';
 }
 ?>
 
@@ -14,24 +14,24 @@ if (isset($_SESSION["email"]) && $_SESSION["role"] == "customer") {
                     if (!isset($data["id"])){
                         if(($data["categoryModal"]->con)->query("INSERT INTO category (category_id,category_name) VALUES (N'$id', N'$name')")){
                             echo "<script type='text/javascript'>alert('them category thanh cong');
-                            window.location.href = 'http://localhost:8080/web221/Category/index';
+                            window.location.href = 'http://localhost/web221/Category/index';
                             </script>";
                         }
                         else{
                             echo "<script type='text/javascript'>alert('them category that bai');
-                            window.location.href = 'http://localhost:8080/web221/Category/index';
+                            window.location.href = 'http://localhost/web221/Category/index';
                             </script>";
                         }
                     }
                     else{
                         if(($data["categoryModal"]->con)->query("UPDATE category SET category_name = N'$name' WHERE category_id = N'$id'")){
                             echo "<script type='text/javascript'>alert('cap nhat category thanh cong');
-                            window.location.href = 'http://localhost:8080/web221/Category/index';
+                            window.location.href = 'http://localhost/web221/Category/index';
                             </script>";
                         }
                         else{
                             echo "<script type='text/javascript'>alert('cap nhat category that bai');
-                            window.location.href = 'http://localhost:8080/web221/Category/index';
+                            window.location.href = 'http://localhost/web221/Category/index';
                             </script>";
                         }
                     }
