@@ -9,7 +9,7 @@
             <div class="first-screen__content hide-in-sd" style="height: 300px;">
                 <div class="uk-container" style="padding: 32px 0">
                     <div class="first-screen__box page-info">
-                        <h2 class="first-screen-page">Tin tức</h2>
+                    <p style="color: #008848; font-size: 50px; text-align: center">Tin tức</p>
                         
                         
                     </div>
