@@ -47,28 +47,28 @@
 
             if ($quantity <= 0 || $price <=0){
                 echo "<script type='text/javascript'>alert('cap nhat product that bai');
-                window.location.href = 'http://localhost:8080/web212/product/index';
+                window.location.href = 'http://localhost/web212/product/index';
                 </script>";
             }
 
             if (!isset($data["id"])) {
                 if (($data["productModal"]->con)->query("INSERT INTO product (product_id,product_name,quantity,price,avatar,category_id, intro) VALUES (N'$id', N'$name',N'$quantity',N'$price', N'$avatar', N'$category_id',N'$intro')")) {
                     echo "<script type='text/javascript'>alert('them product thanh cong');
-                            window.location.href = 'http://localhost:8080/web212/product/index';
+                            window.location.href = 'http://localhost/web212/product/index';
                             </script>";
                 } else {
                     echo "<script type='text/javascript'>alert('them product that bai');
-                            window.location.href = 'http://localhost:8080/web212/product/index';
+                            window.location.href = 'http://localhost/web212/product/index';
                             </script>";
                 }
             } else {
                 if (($data["productModal"]->con)->query("UPDATE product SET product_name = N'$name', quantity =N'$quantity', price = N'$price', avatar = N'$avatar', category_id = N'$category_id', intro = N'$intro'   WHERE product_id = N'$id'")) {
                     echo "<script type='text/javascript'>alert('cap nhat product thanh cong');
-                            window.location.href = 'http://localhost:8080/web212/product/index';
+                            window.location.href = 'http://localhost/web212/product/index';
                             </script>";
                 } else {
                     echo "<script type='text/javascript'>alert('cap nhat product that bai');
-                            window.location.href = 'http://localhost:8080/web212/product/index';
+                            window.location.href = 'http://localhost/web212/product/index';
                             </script>";
                 }
             }

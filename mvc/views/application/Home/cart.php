@@ -3,7 +3,7 @@
   if(!isset($_SESSION["id"])){
     $_SESSION["cart"] = "cart";
     echo '<script type = "text/javascript">
-    window.location.href = "http://localhost:8080/web212/user/sign_in"</script>';
+    window.location.href = "http://localhost/web212/user/sign_in"</script>';
   }
 ?>
 <style>
@@ -102,8 +102,8 @@
                 <h2 class="first-screen-page">Giỏ hàng</h2>
                 <div class="first-screen__breadcrumb">
                     <ul class="uk-breadcrumb">
-                        <li><a href="http://localhost:8080/web212/home/index">Trang chủ</a></li>
-                        <li> <a href="http://localhost:8080/web212/home/cart">Giỏ hàng</a></li>
+                        <li><a href="http://localhost/web212/home/index">Trang chủ</a></li>
+                        <li> <a href="http://localhost/web212/home/cart">Giỏ hàng</a></li>
                     </ul>
                 </div>
                 </div>
@@ -326,7 +326,7 @@ let selectedItem = {
                     var today = new Date();
                     today.setHours( today.getHours()+(today.getTimezoneOffset()/-60) );
                     const datetime = today.toJSON().slice(0, 19).replace('T', ' '); 
-                    btn.href = "http://localhost:8080/web212/home/success/"+orderID+"/" +userID+"/" +datetime+"/" +totalPrice+"/" +name+"/"+email+"/" +phone+"/"+address;
+                    btn.href = "http://localhost/web212/home/success/"+orderID+"/" +userID+"/" +datetime+"/" +totalPrice+"/" +name+"/"+email+"/" +phone+"/"+address;
 
                 }
                 
@@ -341,7 +341,7 @@ let selectedItem = {
         if (productNumber > 0){
             var btn = document.getElementById('page-cart__control-btn');
             var total = document.getElementsByClassName('page-cart__title')[0];
-            // btn.href = 'http://localhost:8080/web212/Home/payment/';
+            // btn.href = 'http://localhost/web212/Home/payment/';
             btn.innerHTML = 'Đặt hàng';
             document.getElementsByClassName('page-cart__img')[0].style.display = 'none';
             total.style.textAlign = 'right';
@@ -351,7 +351,7 @@ let selectedItem = {
         }
         else {
             var btn = document.getElementById('page-cart__control-btn');
-            btn.href = 'http://localhost:8080/web212/Home/catalog';
+            btn.href = 'http://localhost/web212/Home/catalog';
             btn.innerHTML = 'Trờ về mua sắm';
             document.getElementsByClassName('page-cart__img')[0].style.display = 'block';
             var total = document.getElementsByClassName('page-cart__title')[0];

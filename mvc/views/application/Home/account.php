@@ -2,7 +2,7 @@
     if(!isset($_SESSION["id"])){
         $_SESSION["account"] = "account";
         echo '<script type = "text/javascript">
-        window.location.href = "http://localhost:8080/web212/user/sign_in"</script>';
+        window.location.href = "http://localhost/web212/user/sign_in"</script>';
     }
 
 
@@ -41,7 +41,7 @@
             if($check){
                 echo "<script>alert('Cập nhật thông tin thành công.');</script>";       
                 echo '<script type = "text/javascript">
-                window.location.href = "http://localhost:8080/web212/user/log_out"</script>'; 
+                window.location.href = "http://localhost/web212/user/log_out"</script>'; 
                 
             }
         }
@@ -69,8 +69,8 @@
                 <h2 class="first-screen-page">Quản lý tài khoản</h2>
                 <div class="first-screen__breadcrumb">
                     <ul class="uk-breadcrumb">
-                        <li><a href="http://localhost:8080/web212/home/index">Trang chủ</a></li>
-                        <li> <a href="http://localhost:8080/web212/home/account">Quản lý tài khoản</a></li>
+                        <li><a href="http://localhost/web212/home/index">Trang chủ</a></li>
+                        <li> <a href="http://localhost/web212/home/account">Quản lý tài khoản</a></li>
                     </ul>
                 </div>
                 </div>

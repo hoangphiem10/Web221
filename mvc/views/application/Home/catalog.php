@@ -33,8 +33,8 @@
                         </h2>
                         <div class="first-screen__breadcrumb">
                             <ul class="uk-breadcrumb">
-                                <li><a href="http://localhost:8080/web212/home/index">Trang chủ</a></li>
-                                <li> <a href="http://localhost:8080/web212/home/catalog">Sản phẩm</a></li>
+                                <li><a href="http://localhost/web212/home/index">Trang chủ</a></li>
+                                <li> <a href="http://localhost/web212/home/catalog">Sản phẩm</a></li>
                             </ul>
                         </div>
                     </div>
@@ -77,7 +77,7 @@
                                 <div class="product-item" style="border: 2px solid #cce8d9;">
                                     <div class="product-item__box">
                                         <div class="product-item__intro">
-                                            <a href="http://localhost:8080/web212/home/product/<?php echo $row["product_id"] ?>"
+                                            <a href="http://localhost/web212/home/product/<?php echo $row["product_id"] ?>"
                                                 style="text-decoration: none;">
                                                 <div class="product-item__not-active">
                                                     <div class="product-item__media">

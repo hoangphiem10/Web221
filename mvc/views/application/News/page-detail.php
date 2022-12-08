@@ -19,7 +19,7 @@
             <div class="page-content">
                 <div class="uk-margin-large-top uk-container uk-container-small">
                     <div class="article-full__info" style="justify-content:space-between !important">
-                        <a href="http://localhost:8080/web212/news" style="text-decoration:none">
+                        <a href="http://localhost/web212/news" style="text-decoration:none">
                             <i class="fas fa-arrow-left"></i>
                             <span style="color: #56b280">Back to all news</span>
                         </a>

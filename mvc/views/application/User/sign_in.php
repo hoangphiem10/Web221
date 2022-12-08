@@ -1,12 +1,12 @@
 <?php
 if (isset($_SESSION["email"]) && $_SESSION["role"] == "admin") {
     echo '<script type = "text/javascript">
-            window.location.href = "http://localhost:8080/web212/category/index"</script>';
+            window.location.href = "http://localhost/web212/category/index"</script>';
 }
 
 if (isset($_SESSION["email"]) && $_SESSION["role"] == "customer") {
          echo '<script type = "text/javascript">
-        window.location.href = "http://localhost:8080/web212/"</script>';
+        window.location.href = "http://localhost/web212/"</script>';
 }
 
 if (isset($_POST['submit'])) {
@@ -25,22 +25,22 @@ if (isset($_POST['submit'])) {
         if (isset($_SESSION["email"])) {
             if ($row['role'] == "admin") {
                 echo '<script type = "text/javascript">
-                window.location.href = "http://localhost:8080/web212/category/index"</script>';
+                window.location.href = "http://localhost/web212/category/index"</script>';
             }
             // elseif (isset($_SESSION["payment"])){
             //     unset($_SESSION["payment"]);
             //     echo '<script type = "text/javascript">
-            //     window.location.href = "http://localhost:8080/web212/Home/payment/"</script>';
+            //     window.location.href = "http://localhost/web212/Home/payment/"</script>';
             // }
             else {
                 echo '<script type = "text/javascript">
-                window.location.href = "http://localhost:8080/web212/"</script>';
+                window.location.href = "http://localhost/web212/"</script>';
             }
         }
     } else {
         echo '<script type = "text/javascript">
             alert("Email hoặc mặt khẩu không đúng"); 
-            window.location.href = "http://localhost:8080/web212/User/sign_in"</script>';
+            window.location.href = "http://localhost/web212/User/sign_in"</script>';
     }
 }
 ?>
@@ -163,7 +163,7 @@ if (isset($_POST['submit'])) {
 <div class="login-form">
     <form method="post" name="login" class="form-style">
         <div class="form-logo">
-            <a href="http://localhost:8080/web212/home/index">
+            <a href="http://localhost/web212/home/index">
                 <img src="../../../web212/public/assets/img/Bach-Hoa-Xanh-Logo.png" alt="logo">
             </a>
 
@@ -177,7 +177,7 @@ if (isset($_POST['submit'])) {
         <input type="submit" name="submit" value="Đăng nhập" class="btn login-btn btn-bg">
 
         <div class="forgot">
-            <a href="http://localhost:8080/web212/user/sign_up" class="forgotPass" style="float: left;">
+            <a href="http://localhost/web212/user/sign_up" class="forgotPass" style="float: left;">
                 Đăng ký
             </a>
 
