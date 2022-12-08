@@ -18,8 +18,8 @@ if (isset($_SESSION["email"]) && $_SESSION["role"] == "customer") {
 
       <h1 class="page-header-title">Categories<span class="badge badge-soft-dark ml-2"><?php echo mysqli_num_rows($data["categories"])?></span></h1>
     </div>
-    <div class="col-sm-auto">
-      <a href="http://localhost/web212/Category/new" class="btn btn-primary">Add Category</a>
+    <div class="col-sm-auto" >
+      <a href="http://localhost/web212/Category/new" style="background-color:#008848;text-decoration:none;color:white;border:1px solid white;padding:10px;border-radius:5px;">Add Category</a>
     </div>
   </div>
 </div>

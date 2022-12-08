@@ -19,7 +19,7 @@ if (isset($_SESSION["email"]) && $_SESSION["role"] == "customer") {
       <h1 class="page-header-title">Products<span class="badge badge-soft-dark ml-2"><?php echo mysqli_num_rows($data["products"])?></span></h1>
     </div>
     <div class="col-sm-auto">
-      <a href="http://localhost/web212/Product/new" class="btn btn-primary">Add Product</a>
+      <a href="http://localhost/web212/Product/new" class="btn btn-primary" style="background-color:#008848;text-decoration:none;color:white;border:1px solid white;padding:10px;border-radius:5px;">Add Product</a>
     </div>
   </div>
 </div>
