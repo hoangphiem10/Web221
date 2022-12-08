@@ -1,4 +1,3 @@
-
 <div class="page-wrapper">
     <?php require_once './mvc/views/' . $data['header'] . '.php'; ?>
     <main class="page-main">
@@ -30,7 +29,7 @@
      
          <!-- ==============================CAC DIEM DAC BIET======================================== -->   
 
-    <div class="section-features" >
+    <div class="section-features">
       <div class="uk-section uk-container">
         <div class="sectionheader">
           <h2 class="sectiontitle">BÁCH HÓA XANH CÓ GÌ</h2>
@@ -57,7 +56,7 @@
             <div class="feature-item">
               <i class="bi bi-award"></i>
               <div class="feature-item__title">Chuỗi cửa hàng</div>
-              <div class="feature-item__desc">Bách Hóa Xanh có khoảngbr 300 cửa hàng trải rộng khắp brthành phố Hồ Chí Minh.</div>
+              <div class="feature-item__desc">Bách Hóa Xanh có khoảng 300 cửa hàng trải rộng khắp Thành phố Hồ Chí Minh.</div>
             </div>
           </div>
         </div>
