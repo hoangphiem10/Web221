@@ -13,7 +13,7 @@
         if($conn->query($query)){
             echo "<script type='text/javascript'>alert('Đặt hàng thành công. Mã đơn hàng của quý khách là #".  $oid  . ". Cảm ơn quý khách rất nhiều.');
             localStorage.clear();
-            window.location.href = 'http://localhost/web212/';
+            window.location.href = 'http://localhost:8080/web212/';
           </script>";
         }
         else{

@@ -2,7 +2,7 @@
 <?php
 if (isset($_SESSION["email"]) && $_SESSION["role"] == "customer") {
   echo '<script type = "text/javascript">
-  window.location.href = "http://localhost/web212/"</script>';
+  window.location.href = "http://localhost:8080/web212/"</script>';
 }
 ?>
 
@@ -10,4 +10,4 @@ if (isset($_SESSION["email"]) && $_SESSION["role"] == "customer") {
     require_once "../web212/mvc/views/admin/categories/form_category.php";
 ?>
 
-<a href="http://localhost/web212/Category/index">Back</a>
+<a href="http://localhost:8080/web212/Category/index">Back</a>

@@ -2,7 +2,7 @@
   if(!isset($_SESSION["id"])){
     $_SESSION["payment"] = "payment";
     echo '<script type = "text/javascript">
-    window.location.href = "http://localhost/web212/User/sign_in"</script>';
+    window.location.href = "http://localhost:8080/web212/User/sign_in"</script>';
   }
 ?>
 
@@ -49,8 +49,8 @@
                 <h2 class="first-screen-page">Thanh toán</h2>
                 <div class="first-screen__breadcrumb">
                     <ul class="uk-breadcrumb">
-                        <li><a href="http://localhost/web212/home/index">Trang chủ</a></li>
-                        <li> <a href="http://localhost/web212/home/cart">Giỏ hàng</a></li>
+                        <li><a href="http://localhost:8080/web212/home/index">Trang chủ</a></li>
+                        <li> <a href="http://localhost:8080/web212/home/cart">Giỏ hàng</a></li>
                         <li> <a href="">Thanh toán</a></li>
                     </ul>
                 </div>
@@ -91,7 +91,7 @@
     function getOrder(){
    
       var btn = document.getElementById('cod-payment');
-      btn.href = 'http://localhost/web212/Home/success/'+orderID+"/" +userID+"/" +datetime+"/" +price+"/" +name+"/"+email+"/" +phone+"/"+address;
+      btn.href = 'http://localhost:8080/web212/Home/success/'+orderID+"/" +userID+"/" +datetime+"/" +price+"/" +name+"/"+email+"/" +phone+"/"+address;
 
       // let productItem = localStorage.getItem('productItem');
       // productItem = JSON.parse(productItem);
@@ -117,7 +117,7 @@
         onApprove: function (data, actions){
             return actions.order.capture().then(function(orderData){
                 var transaction = orderData.purchase_units[0].payments.captures[0];
-                window.location.href = 'http://localhost/web212/Home/success/'+orderID+"/" +userID+"/" +datetime+"/" +price+"/" +name+"/"+email+"/" +phone+"/"+address;
+                window.location.href = 'http://localhost:8080/web212/Home/success/'+orderID+"/" +userID+"/" +datetime+"/" +price+"/" +name+"/"+email+"/" +phone+"/"+address;
             });
         },
 

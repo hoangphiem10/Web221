@@ -76,7 +76,7 @@
         <ul class="js-filter uk-grid uk-grid-small uk-child-width-1-2@s uk-child-width-1-4@l" data-uk-grid>    
        
             <li class="category-card" style="text-align :center;">
-              <a href="http://localhost/web212/home/catalog">
+              <a href="http://localhost:8080/web212/home/catalog">
               <div class="category-img">
                 <img src="../../../web212/public/assets/img/pages/home/fruit.png" alt="">
               </div>
@@ -84,7 +84,7 @@
               </a>
             </li>
             <li class="category-card" style="text-align :center;">
-              <a href="http://localhost/web212/home/catalog">
+              <a href="http://localhost:8080/web212/home/catalog">
                 <div class="category-img">
                   <img src="../../../web212/public/assets/img/pages/home/meat.png" alt="">
                 </div>
@@ -92,7 +92,7 @@
               </a>
             </li>
             <li class="category-card" style="text-align :center;">
-              <a href="http://localhost/web212/home/catalog">
+              <a href="http://localhost:8080/web212/home/catalog">
                 <div class="category-img">
                   <img src="../../../web212/public/assets/img/pages/home/vegetable.jpg" alt="">
                 </div>
@@ -100,7 +100,7 @@
               </a>
             </li>
             <li class="category-card" style="text-align :center;">
-              <a href="http://localhost/web212/home/catalog">
+              <a href="http://localhost:8080/web212/home/catalog">
                 <div class="category-img">
                   <img src="../../../web212/public/assets/img/pages/home/sea.jpg" alt="">
                 </div>
@@ -141,7 +141,7 @@
                   </li>
                   
 </ul>
-<div class="uk-margin-medium-top"><a class="uk-button" href="http://localhost/web212/home/catalog"><span>Mua ngay</span></a></div>
+<div class="uk-margin-medium-top"><a class="uk-button" href="http://localhost:8080/web212/home/catalog"><span>Mua ngay</span></a></div>
                 </div>
 
               </div>
@@ -167,7 +167,7 @@
       <div class="uk-container">   
         <div class="js-filter uk-grid uk-grid-small uk-child-width-1-2@s uk-child-width-1-4@l" data-uk-grid >
           <li class="category-card" style="text-align: center;">
-            <a href="http://localhost/web212/home/product/11"style="text-decoration: none;">
+            <a href="http://localhost:8080/web212/home/product/11"style="text-decoration: none;">
               <div class="category-img">
                 <img src="../../../web212/public/assets/img/products/11.png" alt="">
               </div>
@@ -175,7 +175,7 @@
             </a>
           </li>
           <li class="category-card" style="text-align: center;">
-            <a href="http://localhost/web212/home/product/13"style="text-decoration: none;">
+            <a href="http://localhost:8080/web212/home/product/13"style="text-decoration: none;">
               <div class="category-img">
                 <img src="../../../web212/public/assets/img/products/13.png" alt="">
               </div>
@@ -183,7 +183,7 @@
             </a>
           </li>
           <li class="category-card" style="text-align: center;">
-            <a href="http://localhost/web212/home/product/31"style="text-decoration: none;">
+            <a href="http://localhost:8080/web212/home/product/31"style="text-decoration: none;">
               <div class="category-img">
                 <img src="../../../web212/public/assets/img/products/31.png" alt="">
               </div>
@@ -191,7 +191,7 @@
             </a>
           </li>
           <li class="category-card" style="text-align: center;">
-            <a href="http://localhost/web212/home/product/12"style="text-decoration: none;">
+            <a href="http://localhost:8080/web212/home/product/12"style="text-decoration: none;">
               <div class="category-img">
                 <img src="../../../web212/public/assets/img/products/12.png" alt="">
               </div>

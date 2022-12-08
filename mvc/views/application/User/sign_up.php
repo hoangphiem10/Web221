@@ -2,12 +2,12 @@
 
 if (isset($_SESSION["email"]) && $_SESSION["role"] == "admin") {
     echo '<script type = "text/javascript">
-            window.location.href = "http://localhost/web212/category/index"</script>';
+            window.location.href = "http://localhost:8080/web212/category/index"</script>';
 }
 
 if (isset($_SESSION["email"]) && $_SESSION["role"] == "customer") {
     echo '<script type = "text/javascript">
-    window.location.href = "http://localhost/web212/"</script>';
+    window.location.href = "http://localhost:8080/web212/"</script>';
 }
 
 if (isset($_POST['submit'])) {
@@ -31,12 +31,12 @@ if (isset($_POST['submit'])) {
     if (($data["userModal"]->con)->query($user)) {
         echo "<script type='text/javascript'>
             alert('Tạo tài khoản thành công!');
-            window.location.href = 'http://localhost/web212/user/sign_in';
+            window.location.href = 'http://localhost:8080/web212/user/sign_in';
         </script>";
     } else {
         echo "<script type='text/javascript'>
             alert('Tạo tài khoản thất bại!');
-            window.location.href = 'http://localhost/web212/user/sign_in';
+            window.location.href = 'http://localhost:8080/web212/user/sign_in';
         </script>";
     }
 }
@@ -159,7 +159,7 @@ if (isset($_POST['submit'])) {
 <div class="signup-form">
     <form name="signup" class="form-style" method="POST" action="">
         <div class="form-logo">
-            <a href="http://localhost/web212/user/sign_in">
+            <a href="http://localhost:8080/web212/user/sign_in">
                 <img src="../../../web212/public/assets/img/Bach-Hoa-Xanh-Logo.png" alt="logo">
             </a>
         </div>
@@ -180,7 +180,7 @@ if (isset($_POST['submit'])) {
 
         <div class="footer-wrapper">
             <span>Đã có tài khoản?</span>
-            <a href="http://localhost/web212/user/sign_in" class="forgotPass">
+            <a href="http://localhost:8080/web212/user/sign_in" class="forgotPass">
                 Đăng nhập
             </a>
         </div>

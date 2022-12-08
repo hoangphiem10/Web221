@@ -1,7 +1,7 @@
 <?php
 if (isset($_SESSION["email"]) && $_SESSION["role"] == "customer") {
   echo '<script type = "text/javascript">
-  window.location.href = "http://localhost/web212/"</script>';
+  window.location.href = "http://localhost:8080/web212/"</script>';
 }
 ?>
 
@@ -10,7 +10,7 @@ if (isset($_SESSION["email"]) && $_SESSION["role"] == "customer") {
     <div class="col-sm mb-2 mb-sm-0">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb breadcrumb-no-gutter">
-          <li class="breadcrumb-item"><a class="breadcrumb-link" href="http://localhost/web212/Order/index"></a></li>
+          <li class="breadcrumb-item"><a class="breadcrumb-link" href="http://localhost:8080/web212/Order/index"></a></li>
           <!-- icon home -->
           <li class="breadcrumb-item active" aria-current="page">Orders</li>
         </ol>
@@ -50,8 +50,8 @@ if (isset($_SESSION["email"]) && $_SESSION["role"] == "customer") {
           <td><?php echo $row["address"] ?></td>
           <td><?php echo $row["phone"] ?></td>
           <!-- <td><?php echo $row["status"] ?></td>
-          <td><a href="http://localhost/web212/Order/edit/<?php echo $row["order_id"] ?>">Edit</td>
-          <td><a href="http://localhost/web212/Order/delete/<?php echo $row["order_id"] ?>">Delete</td> -->
+          <td><a href="http://localhost:8080/web212/Order/edit/<?php echo $row["order_id"] ?>">Edit</td>
+          <td><a href="http://localhost:8080/web212/Order/delete/<?php echo $row["order_id"] ?>">Delete</td> -->
         </tr>
       <?php 
         }

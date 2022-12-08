@@ -1,7 +1,7 @@
 <?php 
     class Database{
         public $con;
-        public $servername = "localhost";
+        public $servername = "localhost:3307";
         public $username = "root";
         public $password = "";
         public $dbname = "web212";

@@ -8,12 +8,12 @@
             $sql2 = "UPDATE user SET user_name=N'$name' WHERE user_id = N'$id'";
             if(($data["CustomerModal"]->con)->query($sql) && ($data["CustomerModal"]->con)->query($sql2)){
                 echo "<script type='text/javascript'>alert('sua customer thanh cong');
-                window.location.href = 'http://localhost/web212/customer/index';
+                window.location.href = 'http://localhost:8080/web212/customer/index';
                 </script>";
             }
             else{
                 echo "<script type='text/javascript'>alert('sua customer that bai');
-                window.location.href = 'http://localhost/web212/customer/index';
+                window.location.href = 'http://localhost:8080/web212/customer/index';
                 </script>";
             }
         }
@@ -38,4 +38,4 @@
 
     </div>
 </div>
-<a href="http://localhost/web212/Customer/index">Back</a>
+<a href="http://localhost:8080/web212/Customer/index">Back</a>

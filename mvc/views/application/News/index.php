@@ -46,7 +46,7 @@
                                             <li class="list-articles-item">
 
                                                 <a class="list-articles-item__link"
-                                                    href="http://localhost/web212/news/detail/<?php echo $row["news_id"] ?>">
+                                                    href="http://localhost:8080/web212/news/detail/<?php echo $row["news_id"] ?>">
                                                     <div class="list-articles-item__img"><img
                                                             src="<?php echo $row["img_news"] ?>" alt="article-thumb">
                                                     </div>
@@ -114,7 +114,7 @@
                                         <div class="article-intro__tags"><i class="fas fa-tags"></i><span>TIN TỨC, NÔNG
                                                 SẢN, TRÁI CÂY</span></div>
                                         <div class="article-intro__more"><a class="uk-button"
-                                                href="http://localhost/web212/news/detail/<?php echo $e["news_id"] ?>">Chi
+                                                href="http://localhost:8080/web212/news/detail/<?php echo $e["news_id"] ?>">Chi
                                                 Tiết</a></div>
                                     </div>
                                 </div>

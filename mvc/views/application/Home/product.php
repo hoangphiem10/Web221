@@ -45,8 +45,8 @@
                         <h2 class="first-screen-page">Sản phẩm</h2>
                         <div class="first-screen__breadcrumb">
                             <ul class="uk-breadcrumb">
-                                <li><a href="http://localhost/web212/home/index">Trang chủ</a></li>
-                                <li> <a href="http://localhost/web212/home/catalog">Sản phẩm</a></li>
+                                <li><a href="http://localhost:8080/web212/home/index">Trang chủ</a></li>
+                                <li> <a href="http://localhost:8080/web212/home/catalog">Sản phẩm</a></li>
                                 <li> <span><?php echo $row["product_name"] ?></span></li>
                             </ul>
                         </div>
