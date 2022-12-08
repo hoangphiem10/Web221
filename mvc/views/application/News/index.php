@@ -9,13 +9,9 @@
             <div class="first-screen__content hide-in-sd" style="height: 300px;">
                 <div class="uk-container" style="padding: 32px 0">
                     <div class="first-screen__box page-info">
-<<<<<<< HEAD
-                        <p style="color: #008848; font-size: 50px; text-align: center">Tin tức</p>
-=======
                     <p style="color: #008848; font-size: 50px; text-align: center">Tin tức</p>
                         
                         
->>>>>>> trang
                     </div>
                 </div>
             </div>
@@ -49,7 +45,7 @@
                                                 ?>
                                                     <li class="list-articles-item">
 
-                                                        <a class="list-articles-item__link" href="http://localhost/web212/news/detail/<?php echo $row["news_id"] ?>">
+                                                        <a class="list-articles-item__link" href="http://localhost:8080/web221/news/detail/<?php echo $row["news_id"] ?>">
                                                             <div class="list-articles-item__img"><img src="<?php echo $row["img_news"] ?>" alt="article-thumb">
                                                             </div>
                                                             <div class="list-articles-item__info">
@@ -111,7 +107,7 @@
                                         <div class="article-intro__bottom">
                                             <div class="article-intro__tags"><i class="fas fa-tags"></i><span>TIN TỨC, NÔNG
                                                     SẢN, TRÁI CÂY</span></div>
-                                            <div class="article-intro__more"><a class="uk-button" href="http://localhost/web212/news/detail/<?php echo $e["news_id"] ?>">Chi
+                                            <div class="article-intro__more"><a class="uk-button" href="http://localhost:8080/web221/news/detail/<?php echo $e["news_id"] ?>">Chi
                                                     Tiết</a></div>
                                         </div>
                                     </div>

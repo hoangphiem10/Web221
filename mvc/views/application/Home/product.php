@@ -61,8 +61,8 @@ if (isset($_POST['submit'])) {
                             </p>
                             <!-- <div class="first-screen__breadcrumb">
                             <ul class="uk-breadcrumb">
-                                <li><a href="http://localhost/web212/home/index">Trang chủ</a></li>
-                                <li> <a href="http://localhost/web212/home/catalog">Sản phẩm</a></li>
+                                <li><a href="http://localhost:8080/web221/home/index">Trang chủ</a></li>
+                                <li> <a href="http://localhost:8080/web221/home/catalog">Sản phẩm</a></li>
                                 <li> <span><?php echo $row["product_name"] ?></span></li>
                             </ul>
                         </div> -->
@@ -80,7 +80,7 @@ if (isset($_POST['submit'])) {
                                     <div class="product-full-card__gallery-box">
                                         <div class="uk-flex uk-flex-center uk-flex-middle">
                                             <div class="adjust-height" style="height: 500px;">
-                                                <img src="../../../web212/public/assets/img/<?php echo $row["avatar"] ?>?t=123" id="product-picture" alt="<?php echo $row["avatar"] ?>?t=123" style="height: 100%; object-fit: cover; margin: 0;">
+                                                <img src="../../../web221/public/assets/img/<?php echo $row["avatar"] ?>?t=123" id="product-picture" alt="<?php echo $row["avatar"] ?>?t=123" style="height: 100%; object-fit: cover; margin: 0;">
                                             </div>
                                         </div>
                                     </div>
@@ -181,7 +181,7 @@ if (isset($_POST['submit'])) {
                                         <article class="uk-comment">
                                             <header class="uk-comment-header">
                                                 <div class="uk-grid-small uk-grid-divider" data-uk-grid>
-                                                    <div class="uk-width-auto@s"><img class="uk-comment-avatar" src="../../../web212/public/assets/img/pages/home/fp1.png" alt>
+                                                    <div class="uk-width-auto@s"><img class="uk-comment-avatar" src="../../../web221/public/assets/img/pages/home/fp1.png" alt>
                                                     </div>
                                                     <div class="uk-width-expand@s">
                                                         <div class="uk-flex uk-flex-middle uk-margin-small-bottom">
@@ -201,7 +201,7 @@ if (isset($_POST['submit'])) {
                                         <article class="uk-comment">
                                             <header class="uk-comment-header">
                                                 <div class="uk-grid-small uk-grid-divider" data-uk-grid>
-                                                    <div class="uk-width-auto@s"><img class="uk-comment-avatar" src="../../../web212/public/assets/img/pages/home/fp2.png" alt>
+                                                    <div class="uk-width-auto@s"><img class="uk-comment-avatar" src="../../../web221/public/assets/img/pages/home/fp2.png" alt>
                                                     </div>
                                                     <div class="uk-width-expand@s">
                                                         <div class="uk-flex uk-flex-middle uk-margin-small-bottom">

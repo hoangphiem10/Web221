@@ -4,7 +4,7 @@
             session_start(); 
         } 
     if(!isset($_SESSION["email"])){
-        header("Location:http://localhost/web212/User/sign_in");
+        header("Location:http://localhost:8080/web221/User/sign_in");
     }
 ?>
 
@@ -13,9 +13,9 @@
   <head>
     <title>BHX Admin</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="shortcut icon" href="../../../web212/public/assets/img/Bach-Hoa-Xanh-Logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../../../web221/public/assets/img/Bach-Hoa-Xanh-Logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../../web212/public/assets/css/theme_admin.css">
+    <link rel="stylesheet" href="../../../web221/public/assets/css/theme_admin.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
   </head>

@@ -417,7 +417,7 @@ blockquote::before {
 }
 
 .uk-checkbox:checked {
-    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2214%22%20height%3D%2211%22%20viewBox%3D%220%200%2014%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%236dc405%22%20points%3D%2212%201%205%207.5%202%205%201%205.5%205%2010%2013%201.5%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2214%22%20height%3D%2211%22%20viewBox%3D%220%200%2014%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%236dc405%22%20points%3D%2221%201%205%207.5%202%205%201%205.5%205%2010%2013%201.5%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
 }
 
 .uk-pagination>* {
@@ -2300,8 +2300,8 @@ body.dm-light .pan-loader .shadow {
 }
 
 .first-screen-page {
-    color: black!important;
-    text-align: left!important;
+    color: rgb(23, 104, 26)!important;
+    text-align: center!important;
     font-family: 'Montserrat';
     font-size: 60px;
     font-style: normal;
@@ -4467,6 +4467,7 @@ body.dm-light .pan-loader .shadow {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
+    text-decoration: none;
 }
 
 .list-articles-item__link:hover,
@@ -4486,6 +4487,7 @@ body.dm-light .pan-loader .shadow {
 
 .list-articles-item__info {
     display: block;
+    text-decoration: none;
 }
 
 .list-articles-item__title {
@@ -4494,6 +4496,7 @@ body.dm-light .pan-loader .shadow {
     font-weight: 600;
     letter-spacing: normal;
     line-height: 1.47;
+    color:rgb(36, 144, 49) !important;
 }
 
 .list-articles-item__date {

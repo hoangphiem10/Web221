@@ -75,33 +75,33 @@
         <ul class="js-filter uk-grid uk-grid-small uk-child-width-1-2@s uk-child-width-1-4@l" data-uk-grid>    
        
             <li class="category-card" style="text-align :center;">
-              <a href="http://localhost/web212/home/catalog">
+              <a href="http://localhost:8080/web221/home/catalog">
               <div class="category-img">
-                <img src="../../../web212/public/assets/img/pages/home/fruit.png" alt="">
+                <img src="../../../web221/public/assets/img/pages/home/fruit.png" alt="">
               </div>
               <h5 class="name">Trái cây</h5>
               </a>
             </li>
             <li class="category-card" style="text-align :center;">
-              <a href="http://localhost/web212/home/catalog">
+              <a href="http://localhost:8080/web221/home/catalog">
                 <div class="category-img">
-                  <img src="../../../web212/public/assets/img/pages/home/meat.png" alt="">
+                  <img src="../../../web221/public/assets/img/pages/home/meat.png" alt="">
                 </div>
                 <h5 class="name">Các loại thịt</h5>
               </a>
             </li>
             <li class="category-card" style="text-align :center;">
-              <a href="http://localhost/web212/home/catalog">
+              <a href="http://localhost:8080/web221/home/catalog">
                 <div class="category-img">
-                  <img src="../../../web212/public/assets/img/pages/home/vegetable.jpg" alt="">
+                  <img src="../../../web221/public/assets/img/pages/home/vegetable.jpg" alt="">
                 </div>
                 <h5 class="name">Các loại thịt</h5>
               </a>
             </li>
             <li class="category-card" style="text-align :center;">
-              <a href="http://localhost/web212/home/catalog">
+              <a href="http://localhost:8080/web221/home/catalog">
                 <div class="category-img">
-                  <img src="../../../web212/public/assets/img/pages/home/sea.jpg" alt="">
+                  <img src="../../../web221/public/assets/img/pages/home/sea.jpg" alt="">
                 </div>
                 <h5 class="name">Các loại thịt</h5>
               </a>
@@ -140,7 +140,7 @@
                   </li>
                   
 </ul>
-<div class="uk-margin-medium-top"><a class="uk-button" href="http://localhost/web212/home/catalog"><span>Mua ngay</span></a></div>
+<div class="uk-margin-medium-top"><a class="uk-button" href="http://localhost:8080/web221/home/catalog"><span>Mua ngay</span></a></div>
                 </div>
 
               </div>
@@ -166,33 +166,33 @@
       <div class="uk-container">   
         <div class="js-filter uk-grid uk-grid-small uk-child-width-1-2@s uk-child-width-1-4@l" data-uk-grid >
           <li class="category-card" style="text-align: center;">
-            <a href="http://localhost/web212/home/product/11"style="text-decoration: none;">
+            <a href="http://localhost:8080/web221/home/product/11"style="text-decoration: none;">
               <div class="category-img">
-                <img src="../../../web212/public/assets/img/products/11.png" alt="">
+                <img src="../../../web221/public/assets/img/products/11.png" alt="">
               </div>
               <h5 class="name">Dưa lưới vỏ xanh</h5>
             </a>
           </li>
           <li class="category-card" style="text-align: center;">
-            <a href="http://localhost/web212/home/product/13"style="text-decoration: none;">
+            <a href="http://localhost:8080/web221/home/product/13"style="text-decoration: none;">
               <div class="category-img">
-                <img src="../../../web212/public/assets/img/products/13.png" alt="">
+                <img src="../../../web221/public/assets/img/products/13.png" alt="">
               </div>
               <h5 class="name">Nho xanh không hạt</h5>
             </a>
           </li>
           <li class="category-card" style="text-align: center;">
-            <a href="http://localhost/web212/home/product/31"style="text-decoration: none;">
+            <a href="http://localhost:8080/web221/home/product/31"style="text-decoration: none;">
               <div class="category-img">
-                <img src="../../../web212/public/assets/img/products/31.png" alt="">
+                <img src="../../../web221/public/assets/img/products/31.png" alt="">
               </div>
               <h5 class="name">Bí xanh</h5>
             </a>
           </li>
           <li class="category-card" style="text-align: center;">
-            <a href="http://localhost/web212/home/product/12"style="text-decoration: none;">
+            <a href="http://localhost:8080/web221/home/product/12"style="text-decoration: none;">
               <div class="category-img">
-                <img src="../../../web212/public/assets/img/products/12.png" alt="">
+                <img src="../../../web221/public/assets/img/products/12.png" alt="">
               </div>
               <h5 class="name">Dưa hoàng kim</h5>
             </a>
@@ -208,7 +208,7 @@
       <div class="uk-container"> 
       <div class="uk-grid uk-child-width-1-3@s" data-uk-grid style="text-align: center; padding-top:30px;padding-bottom:50px">
         <div>
-          <img src="../../../web212/public/assets/img/pages/home/customer2.png" alt="">
+          <img src="../../../web221/public/assets/img/pages/home/customer2.png" alt="">
           <p style="color: #56B280">
             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
           </p>
@@ -218,7 +218,7 @@
         </div>
       
       <div>
-          <img src="../../../web212/public/assets/img/pages/home/customer1.png" alt="">
+          <img src="../../../web221/public/assets/img/pages/home/customer1.png" alt="">
                             <p style="color: #56B280">
                               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                             </p>
@@ -228,7 +228,7 @@
                         </div>
                         <div>
                         <div>
-                            <img src="../../../web212/public/assets/img/pages/home/customer3.png" alt="">
+                            <img src="../../../web221/public/assets/img/pages/home/customer3.png" alt="">
                             <p style="color: #56B280">
                               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                             </p>

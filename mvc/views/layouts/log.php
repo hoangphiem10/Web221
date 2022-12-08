@@ -8,8 +8,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>FreshGro</title>
-    <link rel="shortcut icon" href="../../../web212/public/assets/img/favicon-freshgro.png" type="image/x-icon">
+    <title>Bách Hóa Xanh</title>
+    <link rel="shortcut icon" href="../../../web221/public/assets/img/Bach-Hoa-Xanh-Logo.png" type="image/x-icon">
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">

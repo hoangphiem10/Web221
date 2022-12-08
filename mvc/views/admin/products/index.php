@@ -1,7 +1,7 @@
 <?php
 if (isset($_SESSION["email"]) && $_SESSION["role"] == "customer") {
   echo '<script type = "text/javascript">
-  window.location.href = "http://localhost/web212/"</script>';
+  window.location.href = "http://localhost:8080/web221/"</script>';
 }
 ?>
 
@@ -10,7 +10,7 @@ if (isset($_SESSION["email"]) && $_SESSION["role"] == "customer") {
     <div class="col-sm mb-2 mb-sm-0">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb breadcrumb-no-gutter">
-          <li class="breadcrumb-item"><a class="breadcrumb-link" href="http://localhost/web212/Product/index"></a></li>
+          <li class="breadcrumb-item"><a class="breadcrumb-link" href="http://localhost:8080/web221/Product/index"></a></li>
           <!-- icon home -->
           <li class="breadcrumb-item active" aria-current="page">Products</li>
         </ol>
@@ -19,7 +19,7 @@ if (isset($_SESSION["email"]) && $_SESSION["role"] == "customer") {
       <h1 class="page-header-title">Products<span class="badge badge-soft-dark ml-2"><?php echo mysqli_num_rows($data["products"])?></span></h1>
     </div>
     <div class="col-sm-auto">
-      <a href="http://localhost/web212/Product/new" class="btn btn-primary" style="background-color:#008848;text-decoration:none;color:white;border:1px solid white;padding:10px;border-radius:5px;">Add Product</a>
+      <a href="http://localhost:8080/web221/Product/new" class="btn btn-primary" style="background-color:#008848;text-decoration:none;color:white;border:1px solid white;padding:10px;border-radius:5px;">Add Product</a>
     </div>
   </div>
 </div>
@@ -55,8 +55,8 @@ if (isset($_SESSION["email"]) && $_SESSION["role"] == "customer") {
           <td><?php echo $row["price"] ?></td>
           <td><?php echo $row["quantity"] ?></td>
           <td><?php echo $row["intro"] ?></td>
-          <td><a href="http://localhost/web212/product/edit/<?php echo $row["product_id"] ?>">Edit</td>
-          <td><a href="http://localhost/web212/product/delete/<?php echo $row["product_id"] ?>">Delete</td>
+          <td><a href="http://localhost:8080/web221/product/edit/<?php echo $row["product_id"] ?>">Edit</td>
+          <td><a href="http://localhost:8080/web221/product/delete/<?php echo $row["product_id"] ?>">Delete</td>
         </tr>
       <?php 
         }

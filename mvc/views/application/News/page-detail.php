@@ -9,7 +9,7 @@
             <div class="first-screen__content hide-in-sd" style="height: 300px;">
                 <div class="uk-container" style="padding: 32px 0">
                     <div class="first-screen__box page-info">
-                        <h2 class="first-screen-page">Bài viết</h2>
+                        <h2 class="first-screen-page" style="color: #008848; font-size: 50px; text-align: center" >Bài viết</h2>
                     </div>
                 </div>
             </div>
@@ -19,7 +19,7 @@
             <div class="page-content">
                 <div class="uk-margin-large-top uk-container uk-container-small">
                     <div class="article-full__info" style="justify-content:space-between !important">
-                        <a href="http://localhost/web212/news" style="text-decoration:none">
+                        <a href="http://localhost:8080/web221/news" style="text-decoration:none">
                             <i class="fas fa-arrow-left"></i>
                             <span style="color: #56b280">Back to all news</span>
                         </a>

@@ -1,7 +1,7 @@
 <?php
 if (isset($_SESSION["email"]) && $_SESSION["role"] == "customer") {
   echo '<script type = "text/javascript">
-  window.location.href = "http://localhost/web212/"</script>';
+  window.location.href = "http://localhost:8080/web221/"</script>';
 }
 ?>
 
@@ -10,7 +10,7 @@ if (isset($_SESSION["email"]) && $_SESSION["role"] == "customer") {
     <div class="col-sm mb-2 mb-sm-0">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb breadcrumb-no-gutter">
-          <li class="breadcrumb-item"><a class="breadcrumb-link" href="http://localhost/web212/Customer/index"></a></li>
+          <li class="breadcrumb-item"><a class="breadcrumb-link" href="http://localhost:8080/web221/Customer/index"></a></li>
           <!-- icon home -->
           <li class="breadcrumb-item active" aria-current="page">Customers</li>
         </ol>
@@ -19,7 +19,7 @@ if (isset($_SESSION["email"]) && $_SESSION["role"] == "customer") {
       <h1 class="page-header-title">Customers<span class="badge badge-soft-dark ml-2"><?php echo mysqli_num_rows($data["customers"])?></span></h1>
     </div>
     <!-- <div class="col-sm-auto">
-      <a href="http://localhost/web212/Customer/new" class="btn btn-primary">New Customer</a>
+      <a href="http://localhost:8080/web221/Customer/new" class="btn btn-primary">New Customer</a>
     </div> -->
   </div>
 </div>
@@ -44,8 +44,8 @@ if (isset($_SESSION["email"]) && $_SESSION["role"] == "customer") {
         <tr>
           <td><?php echo $row["customer_id"] ?></td>
           <td><?php echo $row["customer_name"] ?></td>
-          <td><a href="http://localhost/web212/customer/edit/<?php echo $row["customer_id"] ?>">Edit</td>
-          <td><a href="http://localhost/web212/customer/delete/<?php echo $row["customer_id"] ?>">Delete</td>
+          <td><a href="http://localhost:8080/web221/customer/edit/<?php echo $row["customer_id"] ?>">Edit</td>
+          <td><a href="http://localhost:8080/web221/customer/delete/<?php echo $row["customer_id"] ?>">Delete</td>
         </tr>
       <?php 
         }
